@@ -18,7 +18,7 @@ const App = () => {
   const fetchImages = async () => {
     setLoading(true)
     const res = await fetch(
-      `http://localhost:5000/search?query=${query}&page=${page}`
+      `https://image-search-app-8doj.onrender.com/search?query=${query}&page=${page}`
     )
     const data = await res.json()
 
